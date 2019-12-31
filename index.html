@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Rios' Pallets</title>
+        <link rel="stylesheet" href="css/main.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+        <script src="jquery-3.4.1.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        
+        <!-- Navigation -->
+        <nav>
+            <ul class="menu">
+                <li class="logo"><a href="#">Rios' Pallets</a></li>
+                <li class="item"><a href="#">Home</a></li>
+                <li class="item"><a href="#">About</a></li>
+                <li class="item"><a href="#">Services</a></li>
+                <li class="item"><a href="#">Features</a></li>
+                <li class="item"><a href="#">Blog</a></li>
+                <li class="item"><a href="#">Contact Us</a></li>
+                <li class="toggle"><a href="#">Menu</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main -->
+        <main>
+            <!-- Header Image/Text -->
+            <section>
+                <header class="container">
+                    <div class="overlay"></div>
+                    <img class="h-image" src="images/family-owned-mobile.png" alt="Family Owned Business">
+                    <div class="h-text">
+                        <h1>Family Owned Pallet Business</h1>
+                        <hr>
+                        <p>Established 1994</p>
+                    </div>
+                </header>
+            </section>
+
+            <!-- Content -->
+            <section class="content">
+                <header>
+                    <h1>Family Owned</h1>
+                </header>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla semper ullamcorper nunc id lacinia. Morbi id dignissim nunc. Proin in suscipit mauris, at auctor augue. Nunc non posuere felis. Cras vulputate a nibh sit amet facilisis. Integer quis pulvinar nulla. Nunc ultrices ante nisi, eu vulputate libero consectetur nec.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla semper ullamcorper nunc id lacinia. Morbi id dignissim nunc. Proin in suscipit mauris, at auctor augue. Nunc non posuere felis. Cras vulputate a nibh sit amet facilisis. Integer quis pulvinar nulla. Nunc ultrices ante nisi, eu vulputate libero consectetur nec.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla semper ullamcorper nunc id lacinia. Morbi id dignissim nunc. Proin in suscipit mauris, at auctor augue. Nunc non posuere felis. Cras vulputate a nibh sit amet facilisis. Integer quis pulvinar nulla. Nunc ultrices ante nisi, eu vulputate libero consectetur nec.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla semper ullamcorper nunc id lacinia. Morbi id dignissim nunc. Proin in suscipit mauris, at auctor augue. Nunc non posuere felis. Cras vulputate a nibh sit amet facilisis. Integer quis pulvinar nulla. Nunc ultrices ante nisi, eu vulputate libero consectetur nec.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla semper ullamcorper nunc id lacinia. Morbi id dignissim nunc. Proin in suscipit mauris, at auctor augue. Nunc non posuere felis. Cras vulputate a nibh sit amet facilisis. Integer quis pulvinar nulla. Nunc ultrices ante nisi, eu vulputate libero consectetur nec.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla semper ullamcorper nunc id lacinia. Morbi id dignissim nunc. Proin in suscipit mauris, at auctor augue. Nunc non posuere felis. Cras vulputate a nibh sit amet facilisis. Integer quis pulvinar nulla. Nunc ultrices ante nisi, eu vulputate libero consectetur nec.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla semper ullamcorper nunc id lacinia. Morbi id dignissim nunc. Proin in suscipit mauris, at auctor augue. Nunc non posuere felis. Cras vulputate a nibh sit amet facilisis. Integer quis pulvinar nulla. Nunc ultrices ante nisi, eu vulputate libero consectetur nec.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla semper ullamcorper nunc id lacinia. Morbi id dignissim nunc. Proin in suscipit mauris, at auctor augue. Nunc non posuere felis. Cras vulputate a nibh sit amet facilisis. Integer quis pulvinar nulla. Nunc ultrices ante nisi, eu vulputate libero consectetur nec.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla semper ullamcorper nunc id lacinia. Morbi id dignissim nunc. Proin in suscipit mauris, at auctor augue. Nunc non posuere felis. Cras vulputate a nibh sit amet facilisis. Integer quis pulvinar nulla. Nunc ultrices ante nisi, eu vulputate libero consectetur nec.</p>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <div>
+                <h1>Add Later.</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla semper ullamcorper nunc id lacinia. Morbi id dignissim nunc. Proin in suscipit mauris, at auctor augue. Nunc non posuere felis. Cras vulputate a nibh sit amet facilisis. Integer quis pulvinar nulla. Nunc ultrices ante nisi, eu vulputate libero consectetur nec.</p>
+            </div>
+        </footer>
+        <script>
+            $(function() {
+                $(".toggle").on("click", function() {
+                    if ($(".item").hasClass("active")) {
+                        $(".item").removeClass("active");
+                    } else {
+                        $(".item").addClass("active");
+                    }
+                    if ($(".toggle").hasClass("active")) {
+                        $(".toggle").removeClass("active");
+                    } else {
+                        $(".toggle").toggleClass("active");
+                    }
+                });
+            });
+        </script>
+    </body>
+</html>
