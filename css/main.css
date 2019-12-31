@@ -1,0 +1,159 @@
+@-ms-viewport{
+    width: device-width;
+}
+/* Basic styling */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+}
+nav {
+    background: #6785fc;
+    padding: 5px 20px;
+}
+ul {
+    list-style-type: none;
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+p {
+    color: #696969;
+}
+
+
+/* Header */
+.container {
+    position: relative;
+    text-align: center;
+}
+.overlay {
+    background-color: #0000006b;
+    height: 99%;
+    width: 100%;
+    position: absolute;
+}
+.h-image {
+    width: 100%;
+    height: auto;
+}
+.h-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.h-text h1 {
+    font-size: 1.8em;
+    color: #ffffff;
+}
+.h-text p {
+    color: #d2d2d2;
+}
+
+/* Content */
+.content {
+    padding: 30px 20px 
+}
+.content header {
+    font-size: 1.7em;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+
+
+.logo a:hover {
+    text-decoration: none;
+}
+.menu li {
+    font-size: 16px;
+    padding: 15px 5px;
+    white-space: nowrap;
+}
+.logo a {
+    font-size: 20px;
+}
+.toggle a {
+    color: #ffffffcc;
+    font-size: 16px;
+    text-decoration: none;
+    padding: 5px;
+    border: 1px #ffffff3c solid;
+}
+.toggle.active a {
+    color: #ffffff;
+    border: 1px #ffffff solid;
+}
+
+/* Footer */
+footer {
+	background-color: #242729;
+	display: flex;
+	justify-content: center;
+    padding: 30px 20px;
+}
+
+/* Mobile menu */
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.toggle {
+    order: 1;
+}
+.item {
+    width: 100%;
+    text-align: center;
+    order: 2;
+    display: none;
+}
+.item.active {
+    display: block;
+}
+
+/* Tablet menu */
+@media all and (min-width: 600px) {
+    .menu {
+        justify-content: center;
+    }
+    .logo {
+        flex: 1;
+    }
+    .toggle {
+        flex: 1;
+        text-align: right;
+    }
+    .toggle {
+        order: 1;
+    }
+}
+
+/* Desktop menu */
+@media all and (min-width: 900px) {
+    .item {
+        display: block;
+        width: auto;
+    }
+    .toggle {
+        display: none;
+    }
+    .logo {
+        order: 0;
+    }
+    .item {
+        order: 1;
+    }
+    .menu li {
+        padding: 15px 10px;
+    }
+}
