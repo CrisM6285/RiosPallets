@@ -98,6 +98,7 @@ p {
     height: auto;
 }
 .h-text {
+    width: 15em;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -134,10 +135,8 @@ footer {
     text-align: center;
     font-size: 1.2em;
 }
-footer div {
-    padding: .3em;
-}
 footer p {
+    padding: .75em;
     color: #c4c4c4;
 }
 
@@ -161,7 +160,6 @@ footer p {
 textarea {
     resize: vertical;
     min-height: 6em;
-    max-height: 30em;
 }
 #contact-form button[type="submit"] {
     cursor: pointer;

@@ -38,53 +38,43 @@
             <!-- Content -->
             <section class="content">
                 <form id="contact-form" action="/" method="POST">
-                    <div>
-                        <label>
-                            <span>First Name: (required)</span>
-                            <input placeholder="Enter your first name" type="text" tabindex="1" required autofocus>
-                        </label>
-                    </div>
-                    <div>
-                        <label>
-                            <span>Last Name: (required)</span>
-                            <input placeholder="Enter your last name" type="text" tabindex="2" required>
-                        </label>
-                    </div>
-                    <div>
-                        <label>
-                            <span>Email: (required)</span>
-                            <input placeholder="Enter your email address" type="email" tabindex="3" required>
-                        </label>
-                    </div>
-                    <div>
-                        <label>
-                            <span>Telephone: (required)</span>
-                            <input placeholder="Enter your phone number" type="tel" tabindex="4" required>
-                        </label>
-                    </div>
-                    <div>
-                        <label>
-                            <span>Message: (required)</span>
-                            <textarea placeholder="Include as much information as possible" tabindex="5" required></textarea>
-                        </label>
-                    </div>
-                    <div>
-                        <button name="submit" type="submit" id="contact-submit">Send</button>
-                    </div>
+                    <label>
+                        <span>First Name: (required)</span>
+                        <input placeholder="Enter your first name" type="text" tabindex="1" required autofocus>
+                    </label>
+                    <label>
+                        <span>Last Name: (required)</span>
+                        <input placeholder="Enter your last name" type="text" tabindex="2" required>
+                    </label>
+                    <label>
+                        <span>Email: (required)</span>
+                        <input placeholder="Enter your email address" type="email" tabindex="3" required>
+                    </label>
+                    <label>
+                        <span>Telephone: (required)</span>
+                        <input placeholder="Enter your phone number" type="tel" tabindex="4" required>
+                    </label>
+                    <label>
+                        <span>Message: (required)</span>
+                        <textarea placeholder="Include as much information as possible" tabindex="5" required></textarea>
+                    </label>
+                    <button name="submit" type="submit" id="contact-submit">Send</button>
                 </form>
             </section>
         </main>
 
         <!-- Footer -->
         <footer>
-            <div>
-                <p>4414 Long Beach Ave</p>
-                <p>Vernon, CA 90058</p>
-            </div>
-            <div>
-                <p>Phone: <a href="tel:+13230000000">323.000.0000</a></p>
-            </div>
+            <p>Phone: <a href="tel:+13230000000">323.000.0000</a></p>
+            <address>
+                <a href="https://goo.gl/maps/DD1R1cunoUCsur2s9">
+                    4414 Long Beach Ave<br>
+                    Vernon, CA 90058<br>
+                    United States
+                </a>
+            </address>
         </footer>
+
         <script>
             $(function() {
                 $(".toggle").on("click", function() {
