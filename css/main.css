@@ -60,7 +60,7 @@ main {
 
 
 label span, footer p, .content p {
-    font-size: 1em;
+    font-size: inherit;
 }
 
 
