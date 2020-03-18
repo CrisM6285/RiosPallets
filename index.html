@@ -4,7 +4,7 @@
         <title>Rios' Pallets</title>
         <link rel="stylesheet" type="text/css" href="css/main.css" media="screen, handheld">
         <link rel="stylesheet" type="text/css" href="css/enhanced.css" media="screen and (min-width: 40.5em)" />
-        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
         <script src="jquery-3.4.1.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!--[if (lt IE 9)&(!IEMobile)]>
@@ -15,16 +15,20 @@
         
         <!-- Navigation -->
         <nav>
-            <ul class="menu">
-                <li class="logo"><a href="index.html">Rios' Pallets</a></li>
-                <li class="toggle"><a href="#">Menu</a></li>
-                <li class="item current"><a href="index.html">Home</a></li>
-                <li class="item"><a href="#">About</a></li> 
-                <li class="item"><a href="#">Services</a></li>
-                <li class="item"><a href="#">Features</a></li>
-                <li class="item"><a href="#">Blog</a></li>
-                <li class="item"><a href="contact.html">Contact Us</a></li>
-            </ul>
+            <header>
+                <div class="logo"><a href="index.html">Rios' Pallets</a></div>
+                <div class="toggle"><a href="#">Menu</a></div>
+            </header>
+            <div class="navContainer">
+                <ul class="menu">
+                    <li class="current"><a href="index.html">Home</a></li>
+                    <li><a href="#">About</a></li> 
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
         </nav>
 
         <!-- Main -->
@@ -85,11 +89,7 @@
         <script>
             $(function() {
                 $(".toggle").on("click", function() {
-                    if ($(".item").hasClass("active")) {
-                        $(".item").removeClass("active");
-                    } else {
-                        $(".item").addClass("active");
-                    }
+                    $(".navContainer").slideToggle(500);
                     if ($(".toggle").hasClass("active")) {
                         $(".toggle").removeClass("active");
                     } else {
