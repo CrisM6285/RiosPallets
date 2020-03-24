@@ -6,7 +6,7 @@
     --primary-color: #1976d2;
     --secondary-color: #4890EF;
     --shadows: rgba(0, 0, 0, 0.03) 0 3px 9px 0, rgba(0, 0, 0, 0.02) 0 10px 20px 0;
-    --nav-ftr-clr: #fff;
+    --main-text-color: #000;
 }
 * {
     box-sizing: border-box;
@@ -80,10 +80,11 @@ nav {
     display: flex;
     flex-direction: column;
     width: 100%;
-    box-shadow: var(--shadows);
+    /* box-shadow: var(--shadows);
     -moz-box-shadow: var(--shadows);
-    -webkit-box-shadow: var(--shadows);
-    background-color: var(--primary-color);
+    -webkit-box-shadow: var(--shadows); */
+    background-color: #f8f8f8;
+    /* background-color: var(--primary-color); */
     /* background-image: linear-gradient(to bottom, var(--primary-color) 0%, var(--secondary-color) 100%); */
 
 }
@@ -94,6 +95,12 @@ nav header {
 }
 .navContainer {
     display: none;
+}
+.line {
+    width: 100%;
+    height: 1px;
+    background-image: radial-gradient(#cccccc, #cccccc00 70%);
+    border-radius: 50px;
 }
 .menu {
     display: flex;
@@ -106,15 +113,15 @@ nav header {
     white-space: nowrap;
 }
 .logo, .toggle {
-    margin: .7em 1em .7em 1em;
+    margin: .7em 1em;
 }
 .logo {
     flex-grow: 1;
 }
 .logo a {
-    font-size: 1.4em;
-    font-weight: 400;
-    color: var(--nav-ftr-clr);
+    font-size: 1.5em;
+    font-weight: 600;
+    color: var(--main-text-color);
 }
 .logo a:hover {
     text-decoration: none;
@@ -123,16 +130,20 @@ nav header {
     order: 1;
 }
 .toggle a {
-    color: #ffffffcc;
-    border: 1px #ffffffcc solid;
+    transition: color 0.3s linear 0s, border 0.3s linear 0s, background-color 0.3s linear 0s;
+    color: #000000c2;
+    border: 1px #000000be solid;
+    background-color: transparent;
     text-decoration: none;
     padding: 0.3em;
     border-radius: 5px;
     font-weight: 300;
 }
 .toggle.active a {
-    color: var(--nav-ftr-clr);
-    border: 1px var(--nav-ftr-clr) solid;
+    transition: color 0.3s linear 0s, border 0.3s linear 0s, background-color 0.3s linear 0s;
+    color: var(--main-text-color);
+    border: 1px var(--main-text-color) solid;
+    background-color: #00000015;
 }
 li {
     width: 100%;
@@ -140,21 +151,18 @@ li {
     order: 2;
     /* padding: 0.7em 0; */
 }
-li:hover {
-    background-color: #1565c0;
-}
 li a {
     display: block;
-    color: #dfdfdf;
+    color: #000000c2;
     font-weight: 300;
     padding: 0.6em;
 }
 li a:hover {
-    color: var(--nav-ftr-clr);
-    text-decoration: none;
+    color: var(--main-text-color);
+    text-decoration: underline;
 }
 .current a {
-    color: var(--nav-ftr-clr);
+    color: var(--main-text-color);
     font-weight: 500;
 }
 
@@ -262,18 +270,18 @@ footer {
     flex-direction: column;
     padding: 1em;
     text-align: center;
-    box-shadow:
+    /* box-shadow:
         0 -2px 2.5px rgba(0, 0, 0, 0.034),
-        0 -5px 5px rgba(0, 0, 0, 0.048);
-    /* background-color: #414756; */
-    background-image: linear-gradient(to top, var(--primary-color) 0%, var(--secondary-color) 100%);
+        0 -5px 5px rgba(0, 0, 0, 0.048); */
+    background-color: #f8f8f8;
+    /* background-image: linear-gradient(to top, var(--primary-color) 0%, var(--secondary-color) 100%); */
 }
 footer p {
     padding-bottom: 1em;
     color: #d2d2d2;
 }
 footer p a, address a {
-    color: var(--nav-ftr-clr);
+    color: var(--main-text-color);
 }
 
 
@@ -282,6 +290,7 @@ footer p a, address a {
 @media screen and (min-width: 40em) {
     nav {
         flex-direction: row;
+        flex-wrap: wrap;
     }
     .navContainer {
         display: flex !important;
@@ -289,27 +298,24 @@ footer p a, address a {
     li {
         order: 1;
         width: auto;
-        height: 100%;
         display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
     }
     li a {
         width: 100%;
-        border-bottom: 4px solid #ffffff00;
+        border-bottom: 3px solid #ffffff00;
         padding-top: 1.26em;
         padding-bottom: 0.3em;
     }
     li a:hover {
-        color: #dfdfdf;
+        /* color: #dfdfdf; */
         text-decoration: none;
     }
     .current a, li a:hover {
-        border-bottom: 4px solid #63a4ff;
+        border-bottom: 3px solid #63a4ff;
     }
     li a:active {
-        color: var(--nav-ftr-clr);
-        border-bottom: 4px solid #63a4ff;
+        color: var(--main-text-color);
+        border-bottom: 3px solid #63a4ff;
     }
     .toggle {
         display: none;
@@ -319,7 +325,6 @@ footer p a, address a {
     }
     .current a {
         font-weight: 300;
-        background-color: #1565c0;
     }
     .content {
         margin: auto;
