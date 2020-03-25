@@ -21,13 +21,14 @@
             <div class="navList">
                 <ul class="menu">
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="theme_2/index.html">Theme_2</a></li> 
+                    <li><a href="../index.html">Theme_1</a></li> 
                     <!-- <li><a href="#">Services</a></li>
                     <li><a href="#">Features</a></li>
                     <li><a href="#">Blog</a></li> -->
                     <li class="current"><a href="contact.html">Contact Us</a></li>
                 </ul>
             </div>
+            <div class="line"></div>
         </nav>
 
         <!-- Main -->
@@ -70,9 +71,11 @@
                 </form>
             </section>
         </main>
-
+        
+        
         <!-- Footer -->
         <footer>
+            <div class="line"></div>
             <p>Phone: <a href="tel:+13230000000">323.000.0000</a></p>
             <address>
                 <a href="https://goo.gl/maps/DD1R1cunoUCsur2s9" target="_blank">
@@ -87,7 +90,7 @@
         <script>
             $(function() {
                 $(".toggle").on("click", function() {
-                    $(".navList").slideToggle(500);
+                    $(".navList").slideToggle(400);
                     if ($(".toggle").hasClass("active")) {
                         $(".toggle").removeClass("active");
                     } else {

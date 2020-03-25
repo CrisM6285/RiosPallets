@@ -17,7 +17,6 @@
         border-bottom: 3px solid #ffffff00;
         padding-top: 1.27em;
         padding-bottom: 0.8em;
-        /* font-weight: 300; */
     }
     li a:hover {
         /* color: #dfdfdf; */
@@ -27,7 +26,7 @@
         border-bottom: 3px solid #63a4ff;
     }
     li a:active {
-        color: var(--nav-ftr-clr);
+        color: var(--main-text-color);
         border-bottom: 3px solid #63a4ff;
     }
     .toggle {
