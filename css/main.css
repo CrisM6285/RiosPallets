@@ -198,16 +198,59 @@ li a:hover {
 main {
     padding: 2em 1em;
 }
+.top-banner-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 350px;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    align-content: center;
+    /* justify-content: center; */
+}
+.banner-image-div {
+    grid-area: 1 / 1 / 2 / 2;
+}
+.banner-overlay-div {
+    grid-area: 1 / 1 / 2 / 2;
+}
+.banner-text-div {
+    grid-area: 1 / 1 / 2 / 2;
+}
+.banner-image {
+    display: grid;
+    min-width: 350px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.banner-overlay-div {
+    display: grid;
+    max-width: 100%;
+    background: linear-gradient(
+      60deg,
+      rgba(0, 0, 0, 0.777) 30%,
+      rgba(255, 255, 255, 0) 100%
+    ); 
+}
+.banner-text-div {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    font-weight: lighter;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.banner-h1-text {
+    font-size: calc(20pt + 0.15vw);
+    letter-spacing: 0.05em;
+    color: rgb(255, 255, 255);
+}
 .content {
     /* background-color: #fff; */
     flex-grow: 1;
     /* box-shadow: var(--shadows);
     -moz-box-shadow: var(--shadows);
     -webkit-box-shadow: var(--shadows); */
-}
-.content header {
-    text-align: center;
-    padding-bottom: 0.5em;
 }
 
 
